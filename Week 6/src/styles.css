@@ -1,0 +1,162 @@
+.search {
+    border: solid black 1px;
+    width: 88%;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+  }
+  #searchIcon {
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+  }
+  #search {
+    background-color: white;
+    border: 1px solid black;
+    display: inline;
+    border-radius: 90px;
+    height: 50px;
+    width: 50px;
+  }
+  #LocationIcon{
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+    
+  }
+  #currentLocation{
+    background-color: white;
+    border: 1px solid black;
+    display: inline;
+    border-radius: 90px;
+    height: 50px;
+    width: 50px;
+  }
+  .dayContainer {
+    border-radius: 10px;
+    height: 90%;
+    margin: 20px;
+    background-color: #f1f1f1;
+  }
+  .dayContainer:hover {
+    background-color: #d3d4d5;
+  }
+  .weatherIcon {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(120, 156, 210);
+    display: block;
+    margin-top: 20px;
+  }
+  h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+  }
+  #mainWeather {
+    font-size: 200px;
+    color: rgb(243, 212, 54);
+    position: relative;
+    margin: 40px;
+  }
+  .currentWeather {
+    margin: 20px;
+  }
+  .buttonDay {
+    display: inline;
+    margin: 10px;
+    width: 30%;
+    background-color: #f1f1f1;
+  }
+  .buttonDay:clicked {
+    background-color: grey;
+  }
+  .weeklyDayWeather{
+    margin-right: 0px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: inline;
+  }
+  .weeklyDayWeatherdegree {
+    margin-left:0px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: inline;
+  }
+  .division {
+    font-size: 50px;
+    text-align: center;
+    display: inline;
+    font-weight: lighter;
+  }
+  .weekweather {
+    text-align: center;
+  }
+  .divisiontemp {
+    font-size: 30px;
+    font-weight: 100;
+    display: inline;
+  }
+  .temp {
+    display: inline;
+    font-family: monospace;
+    margin: 10px;
+    font-size: 20px;
+    margin-top: 130px;
+    text-align: center;
+  }
+  .tempMain {
+    font-size: 120px;
+    text-align: center;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #mainTemp{
+    margin-left: 50px;
+  }
+  .mainHumidity{
+    margin-left: 30px;
+  }
+  .currentTemp {
+    margin: 10px;
+    margin-top: 130px;
+  }
+  .maindivision {
+    display: inline;
+    font-size: 290px;
+    font-weight: 1;
+  }
+  .hum {
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  .buttonCelcius {
+    margin: 5px;
+  }
+  #date {
+    text-align: right;
+    margin: 20px;
+    position: absolute;
+    right: 5%;
+    top: 13%;
+    font-family: monospace;
+  }
+  
