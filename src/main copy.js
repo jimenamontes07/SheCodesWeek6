@@ -1,5 +1,6 @@
 let celcius = true;
 
+
 let days = [
   "Monday",
   "Tuesday",
@@ -25,10 +26,32 @@ window.onload = function () {
  
   //getCurrentPosition();
   getLocation() ;
+  getDays();
 
 
   return;
 };
+
+
+function getDays(){
+  day = loadDate();
+  index = days.indexOf(day)
+  forecastdays = document.querySelectorAll(".day")
+
+
+  forecastdays.forEach((day) => {
+    if (index === 6){
+      index = 0;
+      day.innerHTML = days[index]
+      
+    }else{
+      index = index+1
+      day.innerHTML = days[index]
+    }
+  });
+  
+    
+}
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -117,8 +140,10 @@ function changeCity(event) {
   axios.get(weatherApiUrl).then(getCountry) ;
   axios.get(weatherApiUrl).then(getTemp);
   axios.get(weatherApiUrl).then(getHum);
+  axios.get(weatherApiUrl).then(getWind);
   axios.get(weatherApiUrl).then(getForecast);
   axios.get(weatherApiUrl).then(getIcon);
+  axios.get(weatherApiUrl).then(getDescription);
   
 
 }
@@ -180,6 +205,14 @@ function getCountry (response){
   currentcity.innerHTML = newCity;
 
 }
+function getDescription (response){
+  //event.preventDefault();
+  let currentdescription = document.querySelector("#dayDescription");
+  let description = response.data.condition.description;
+  currentdescription.innerHTML = description;
+
+}
+
 function showPosition(position){
   console.log("gotlatlong")
   console.log(position);
@@ -224,6 +257,13 @@ function getHum(response){
   let mainHum = document.querySelector(".mainHumidity");
   mainHum.innerHTML = hum;
 }
+function getWind(response){
+  let wind = response.data.wind.speed;
+  wind = Math.round(wind);
+  let mainWind = document.querySelector(".windSpeed");
+  mainWind.innerHTML = wind;
+}
+
 
 
 function loadDate() {
@@ -239,4 +279,5 @@ function loadDate() {
   let date = document.getElementById("date");
 
   date.innerHTML = `${day}, ${time}`;
+  return(day);
 }

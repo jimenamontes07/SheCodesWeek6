@@ -63,9 +63,15 @@
     font-family: Arial, Helvetica, sans-serif;
     display: inline;
   }
+  #dayDescription{
+    font-family: monospace;
+    margin: 15px;
+    font-size: 20px;
+    
+  } 
   #mainWeather {
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     position: relative;
     margin: 40px;
   }
@@ -128,15 +134,13 @@
   #mainTemp{
     margin-left: 50px;
   }
-  .mainHumidity{
-    margin-left: 30px;
-  }
+
   .currentTemp {
     margin: 20px;
   }
   .maindivision {
     display: inline;
-    font-size: 220px;
+    font-size: 210px;
     font-weight: 1;
     padding: 0px;
     text-align: center;
@@ -146,7 +150,7 @@
     font-family: monospace;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   .buttonCelcius {
     margin: 5px;
@@ -171,12 +175,25 @@
     margin-left: 6%;
     font-family: monospace;
     color: black;
+    margin-bottom:5px;
   }
-  #link.strong{
-    color:blue;
-  }
+ 
   #break{
     margin-left:6%;
     margin-right:6%;
     margin-top:2%;
+  }
+  .windandhum{
+    font-size: 40px;
+    text-align: center;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:30px;
+  }
+  .symbolspeedandhum{
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:30px;
   }
