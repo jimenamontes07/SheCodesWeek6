@@ -10,7 +10,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="src/styles.css" />
-    <script src="src/main.js"></script>
+    <script src="src/main copy.js"></script>
     <script
       src="https://kit.fontawesome.com/ca57aac127.js"
       crossorigin="anonymous"
@@ -39,17 +39,20 @@
         </button>
       </form>
       <section>
+        <div class = "row headder">
+          <div>
+          <span id="CurrentCity" class = "h1">
+            City,Country
+          </span>
+          <div id="date">date </div>
+         </div>
+
+        </div>
         <div class="row">
           <div class="currentWeather col-3">
-            <h1 id="CurrentCity">
-              City,Country
-            </h1>
-
-            <i class="fa-solid fa-sun" id="mainWeather"></i><br />
-            <button type="button" class="btn btn-light buttonDay">Today</button>
-            <button type="button" class="btn btn-light buttonDay">Week</button>
+            <img src="" alt="weatherIcon" id = "mainWeather"><br/>
           </div>
-          <h2 id="date">date</h2>
+          
 
           <div class="currentTemp col-3">
             <h2 class="temp">
@@ -62,7 +65,7 @@
             >
               °C
             </button>
-            <p class="divisiontemp">|</p>
+            <div class="divisiontemp">|</div>
             <button
               type="button"
               class="btn btn-light buttonCelcius"
@@ -74,7 +77,7 @@
               <div class="tempMain" id="mainTemp">5</div><div class="tempMain"> °</div>
             </p>
           </div>
-          <p class="maindivision col-1">|</p>
+          <div class="maindivision col-1">|</div>
           <div class="currentTemp col-3">
             <h2 class="hum">
               Humidity
@@ -90,58 +93,63 @@
         <div class="row">
           <div class="col-2 dayContainer">
             <h3>Monday</h3>
-            <i class="fa-solid fa-cloud weatherIcon"></i><br />
+            <img id="day1Icon" src="" class=" weatherIcon"> </img><br />
             <div class="weekweather">
-              <div class="weeklyDayWeather">5</div><span class="weeklyDayWeatherdegree">°</span>
+              <div class="weeklyDayWeather" id="minTemp1">5</div><span class="weeklyDayWeatherdegree">°</span>
               <div class="division">|</div>
-              <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+              <div class="weeklyDayWeather" id="maxTemp1">10</div><span class="weeklyDayWeatherdegree">°</span>
             </div>
           </div>
           <div class="col-2 dayContainer">
             <h3>Tuesday</h3>
-            <i class="fa-solid fa-cloud weatherIcon"></i><br />
+            <img id="day2Icon" src="" class=" weatherIcon"> </img><br />
             <div class="weekweather">
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="minTemp2">10</div><span class="weeklyDayWeatherdegree">°</span>
                 <div class="division">|</div>
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="maxTemp2" >10</div><span class="weeklyDayWeatherdegree">°</span>
             </div>
           </div>
           <div class="col-2 dayContainer">
             <h3>Wednesday</h3>
-            <i class="fa-solid fa-cloud weatherIcon"></i><br />
+            <img id="day3Icon" src="" class=" weatherIcon"> </img><br />
             <div class="weekweather">
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="minTemp3">10</div><span class="weeklyDayWeatherdegree">°</span>
                 <div class="division">|</div>
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="maxTemp3" >10</div><span class="weeklyDayWeatherdegree">°</span>
             </div>
           </div>
           <div class="col-2 dayContainer">
             <h3>Thursday</h3>
-            <i class="fa-solid fa-cloud weatherIcon"></i><br />
+            <img id="day4Icon" src="" class=" weatherIcon"> </img><br />
             <div class="weekweather">
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="minTemp4">10</div><span class="weeklyDayWeatherdegree">°</span>
                 <div class="division">|</div>
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="maxTemp4">10</div><span class="weeklyDayWeatherdegree">°</span>
             </div>
           </div>
           <div class="col-2 dayContainer">
             <h3>Friday</h3>
-            <i class="fa-solid fa-cloud weatherIcon"></i><br />
+            <img id="day5Icon" src="" class=" weatherIcon"> </img><br />
             <div class="weekweather">
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="minTemp5">10</div><span class="weeklyDayWeatherdegree">°</span>
                 <div class="division">|</div>
-                <div class="weeklyDayWeather">10</div><span class="weeklyDayWeatherdegree">°</span>
+                <div class="weeklyDayWeather" id="maxTemp5">10</div><span class="weeklyDayWeatherdegree">°</span>
             </div>
           </div>
         </div>
       </footer>
     </div>
+    <hr id = "break" >
+    <a id = "link" href="https://github.com/jimenamontes07/SheCodesWeek6">Open source code by <strong>Jimena</strong></a>
+
+    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
 
-    <a style = "margin-left:5%;" href="https://github.com/jimenamontes07/SheCodesWeek6">Link to GitHub project</a>
+    
   </body>
 </html>

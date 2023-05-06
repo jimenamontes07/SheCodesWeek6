@@ -83,6 +83,7 @@ function getTemp(response){
   let mainTemp = document.querySelector("#mainTemp");
   mainTemp.innerHTML = temp;
 }
+
 function getCountry (response){
   let currentcity = document.querySelector("#CurrentCity");
   let cityEntered = document.querySelector("#cityInput").value;
@@ -95,8 +96,8 @@ function getCountry (response){
 function showPosition(position){
   console.log("gotlatlong")
   console.log(position);
-  let long = osition.choods.long;
-  let lat = position.choods.latitude;
+  let long = position.coords.long;
+  let lat = position.coords.latitude;
   changeCityByLoc(lat,long);
   
 }
@@ -105,7 +106,6 @@ function showPosition(position){
 function getCurrentPosition (event){
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
-  console.log(0)
 
 }
 
